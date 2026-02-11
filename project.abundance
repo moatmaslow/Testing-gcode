@@ -26,13 +26,11 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 100,
-          "currentEquation": "100"
+          "ioValue": 100
         },
         {
           "name": "y length",
-          "ioValue": 200,
-          "currentEquation": "200"
+          "ioValue": 200
         }
       ]
     },
@@ -48,8 +46,7 @@
         },
         {
           "name": "height",
-          "ioValue": 15,
-          "currentEquation": "15"
+          "ioValue": 15
         }
       ]
     },
@@ -61,13 +58,11 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 30,
-          "currentEquation": "30"
+          "ioValue": 30
         },
         {
           "name": "y length",
-          "ioValue": 30,
-          "currentEquation": "30"
+          "ioValue": 30
         }
       ]
     },
@@ -99,18 +94,15 @@
         },
         {
           "name": "xDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         },
         {
           "name": "yDist",
-          "ioValue": 20,
-          "currentEquation": "20"
+          "ioValue": 20
         },
         {
           "name": "zDist",
-          "ioValue": 10,
-          "currentEquation": "10"
+          "ioValue": 10
         }
       ]
     },
@@ -158,8 +150,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 50,
-          "currentEquation": "50"
+          "ioValue": 50
         }
       ]
     },
@@ -175,8 +166,7 @@
         },
         {
           "name": "height",
-          "ioValue": 10,
-          "currentEquation": "10"
+          "ioValue": 10
         }
       ]
     },
@@ -192,18 +182,15 @@
         },
         {
           "name": "xDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         },
         {
           "name": "yDist",
-          "ioValue": -50,
-          "currentEquation": "-50"
+          "ioValue": -50
         },
         {
           "name": "zDist",
-          "ioValue": 13,
-          "currentEquation": "13"
+          "ioValue": 13
         }
       ]
     },
@@ -215,8 +202,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 30,
-          "currentEquation": "30"
+          "ioValue": 30
         }
       ]
     },
@@ -232,8 +218,7 @@
         },
         {
           "name": "height",
-          "ioValue": 100,
-          "currentEquation": "100"
+          "ioValue": 100
         }
       ]
     },
@@ -253,15 +238,48 @@
         },
         {
           "name": "yDist",
-          "ioValue": 70,
-          "currentEquation": "70"
+          "ioValue": 70
         },
         {
           "name": "zDist",
-          "ioValue": -10,
-          "currentEquation": "-10"
+          "ioValue": -10
         }
       ]
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.7798238590872698,
+      "y": 0.6965317919075145,
+      "uniqueID": "id-680",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Tool Size",
+          "ioValue": 6.35
+        },
+        {
+          "name": "Passes",
+          "ioValue": 2
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Testing-gcode",
+          "currentEquation": "Testing-gcode"
+        }
+      ],
+      "partName": "Testing-gcode",
+      "sortDirection": "Left"
     }
   ],
   "allConnectors": [
@@ -297,6 +315,11 @@
     },
     {
       "ap2Name": "geometry",
+      "ap1ID": "id-606",
+      "ap2ID": "id-680"
+    },
+    {
+      "ap2Name": "geometry",
       "ap1ID": "id-610",
       "ap2ID": "id-613"
     },
@@ -324,6 +347,11 @@
       "ap2Name": "Shape 4",
       "ap1ID": "id-631",
       "ap2ID": "id-601"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-680",
+      "ap2ID": "id-577"
     }
   ],
   "unitsKey": "MM",
