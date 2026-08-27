@@ -20,8 +20,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.20740740740740743,
-      "y": 0.28530259365994237,
+      "x": 0.24825174825174826,
+      "y": 0.15479876160990713,
       "uniqueID": "id-579",
       "ioValues": [
         {
@@ -36,8 +36,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.4266666666666667,
-      "y": 0.24855491329479767,
+      "x": 0.3958041958041958,
+      "y": 0.12074303405572755,
       "uniqueID": "id-583",
       "ioValues": [
         {
@@ -52,8 +52,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.12640449438202248,
-      "y": 0.3314121037463977,
+      "x": 0.10139860139860139,
+      "y": 0.6687306501547987,
       "uniqueID": "id-587",
       "ioValues": [
         {
@@ -128,8 +128,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.6832865168539326,
-      "y": 0.22478386167146974,
+      "x": 0.672782874617737,
+      "y": 0.29721362229102166,
       "uniqueID": "id-606",
       "ioValues": [
         {
@@ -144,8 +144,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.1074438202247191,
-      "y": 0.6138328530259366,
+      "x": 0.0986013986013986,
+      "y": 0.8544891640866873,
       "uniqueID": "id-610",
       "ioValues": [
         {
@@ -248,8 +248,8 @@
     },
     {
       "atomType": "Gcode",
-      "x": 0.8146067415730337,
-      "y": 0.5043227665706052,
+      "x": 0.8208530805687204,
+      "y": 0.7870370370370371,
       "uniqueID": "id-680",
       "ioValues": [
         {
@@ -258,7 +258,7 @@
         },
         {
           "name": "Tool Size",
-          "ioValue": 5
+          "ioValue": 4
         },
         {
           "name": "Passes",
@@ -311,8 +311,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.6797752808988764,
-      "y": 0.7291066282420748,
+      "x": 0.6899365367180417,
+      "y": 0.6358024691358025,
       "uniqueID": "id-742",
       "ioValues": [
         {
@@ -348,6 +348,54 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.15454545454545454,
+      "y": 0.41486068111455104,
+      "uniqueID": "id-814",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 30
+        },
+        {
+          "name": "y length",
+          "ioValue": 30
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.2909090909090909,
+      "y": 0.3777089783281734,
+      "uniqueID": "id-818",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 15
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.5216783216783217,
+      "y": 0.30959752321981426,
+      "uniqueID": "id-822",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -359,7 +407,7 @@
     {
       "ap2Name": "retain",
       "ap1ID": "id-583",
-      "ap2ID": "id-606"
+      "ap2ID": "id-822"
     },
     {
       "ap2Name": "geometry",
@@ -385,6 +433,11 @@
       "ap2Name": "retain",
       "ap1ID": "id-606",
       "ap2ID": "id-742"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-606",
+      "ap2ID": "id-577"
     },
     {
       "ap2Name": "geometry",
@@ -435,6 +488,21 @@
       "ap2Name": "remove",
       "ap1ID": "id-746",
       "ap2ID": "id-742"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-814",
+      "ap2ID": "id-818"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-818",
+      "ap2ID": "id-822"
+    },
+    {
+      "ap2Name": "retain",
+      "ap1ID": "id-822",
+      "ap2ID": "id-606"
     }
   ],
   "unitsKey": "MM",
